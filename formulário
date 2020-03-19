@@ -1,0 +1,142 @@
+<html>
+<head>
+
+<title>FORMULÁRIO DE CADASTRO DE FUNCIONÁRIO</title>
+
+</head>
+<body>
+<?php
+$data_cadastro_funcionario = date("d/m/Y");
+?>
+<fieldset>
+<legend><b><font face="Verdana" size="3"
+color="blue">FORMULARIO DE CADASTRO - <font face="Verdana" size="3"
+color="red">FUNCIONARIO</font></font></b></legend>
+<table border="0" width="650">
+<tr>
+<td>Nome:</td>
+
+<td><input type="text" name="nome_funcionario"
+
+value="" size="45" /></td>
+</tr>
+<td>Endereço:</td>
+<td><input type="text"
+name="endereco_funcionario" value="" size="50" /></td>
+</tr>
+<tr>
+
+<td>Cidade:</td>
+<td><input type="text"
+name="cidade_funcionario" value="" size="30" /></td>
+</tr>
+<tr>
+
+<td>Estado:</td>
+
+<td colspan="2"><select name="estado">
+<option value=""></option>
+<option value="AC">Acre</option>
+<option value="AL">Alagoas</option>
+<option value="AP">Amapá</option>
+<option value="AM">Amazonas</option>
+<option value="BA">Bahia</option>
+<option value="CE">Ceará</option>
+<option value="DF">Distrito
+
+Federal</option>
+<option value="ES">Espírito
+Santo</option>
+<option value="GO">Goiás</option>
+<option value="MA">Maranhão</option>
+<option value="MT">Mato
+
+Grosso</option>
+
+<option value="MS">Mato Grosso do
+
+Sul</option>
+
+<option value="MG">Minas
+
+Gerais</option>
+
+<option value="PR">Paraná</option>
+<option value="PB">Paraíba</option>
+<option value="PA">Pará</option>
+<option value="PE">Pernambuco</option>
+<option value="PI">Piauí</option>
+
+<option value="RJ">Rio de
+Janeiro</option>
+<option value="RN">Rio Grande do
+Norte</option>
+
+<option value="RS">Rio Grande do
+
+Sul</option>
+<option value="RO">Rondonia</option>
+<option value="RR">Roraima</option>
+
+<option value="SC">Santa
+
+Catarina</option>
+
+<option value="SE">Sergipe</option>
+<option value="SP">São Paulo</option>
+<option value="TO">Tocantins</option>
+</select></td>
+</tr>
+<tr>
+
+<td>Cep:</td>
+
+<td><input type="text" name="cep_funcionario"
+
+value="" size="10"
+onkeyPress="MascaraCep(form_funcionario.cep_funcionario);" onBlur="
+ValidaCep(form_funcionario.cep_funcionario)"; maxlength="14"/></td>
+</tr>
+<tr>
+
+<td>Fone Celular:</td>
+<td><input type="text"
+
+name="tel_celular_funcionario" value="" size="15" onKeyPress="
+MascaraTelefone(form_funcionario.tel_celular_funcionario);"
+onBlur="ValidaTelefone(form_funcionario.tel_celular_funcionario);"
+maxlength="14"/></td>
+</tr>
+<td>Fone Residencial:</td>
+<td><input type="text"
+name="tel_residencial_funcionario" value="" size="15"
+onKeyPress="MascaraTelefone(form_funcionario.tel_residencial_funcionar
+io);"
+onBlur="ValidaTelefone(form_funcionario.tel_residencial_funcionario);"
+maxlength="14" /></td>
+</tr>
+<tr>
+<tr>
+
+<td>Situação:</td>
+<td colspan="2"><select
+name="situacao_funcionario">
+<option value=""></option>
+<option value="Ativo">Ativo</option>
+<option value="Inativo">Inativo</option>
+</select>
+</tr>
+<tr>
+
+<td></td>
+
+<td><input type="submit" value="CADASTRAR"
+
+name="btn_cadastrar" /><input type="reset" value="LIMPAR"
+name="btn_limpar" /></td>
+</tr>
+</table>
+</form>
+</fieldset>
+</body>
+</html>
