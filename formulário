@@ -16,7 +16,7 @@ color="red">FUNCIONARIO</font></font></b></legend>
 <tr>
 <td>Nome:</td>
 
-<td><input type="text" name="nome_funcionario"
+<td><input type="text" name="nome_funcionaro"
 
 value="" size="45" /></td>
 </tr>
